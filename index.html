@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Online Banking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>National Online Banking</h1>
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="withdraw.html">Withdrawal</a></li>
+                  <li><a href="details.html">Your Account Details</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="welcome-section">
+            <h2>Welcome to Secure Online Banking</h2>
+            <p>Your one-stop banking solution, anytime and anywhere.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="customer-form" action="withdraw.html">
+                <div class="input-group">
+                    <label for="name">Account Holder Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" placeholder="Enter account number" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="account-type">Account Type:</label>
+                    <select id="account-type" name="account-type" required>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                    </select>
+                </div>
+
+                <button type="submit">Proceed to Withdrawal</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 National Online Banking</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
